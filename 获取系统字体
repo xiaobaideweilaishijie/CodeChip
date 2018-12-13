@@ -1,0 +1,6 @@
+QStringList strings;
+    QFontDatabase database;
+    foreach (QString family, database.families(QFontDatabase::SimplifiedChinese)) {
+        strings.append(family);
+    }
+    qDebug()<<string;
