@@ -1,0 +1,4 @@
+    QHostInfo info = QHostInfo::fromName("www.baidu.com");
+    qDebug() << info.addresses().first().toString();
+    QHostAddress host(info.addresses().first().toString());
+    qDebug() << host;
