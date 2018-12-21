@@ -1,0 +1,5 @@
+QString programAddress = "D:/Program Files (x86)/2345Soft/2345Explorer/2345Explorer.exe";
+QStringList arguments;
+arguments << "file:///F:/shined-PC(488AD2092F21)/信息发布系统项目文档/信息发布系统设计方案(180510).pdf";
+QProcess *chromeProcess = new QProcess(this);
+chromeProcess->start(programAddress, arguments);
