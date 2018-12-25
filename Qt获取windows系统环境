@@ -1,0 +1,9 @@
+QString strWindows = QProcessEnvironment::systemEnvironment().value("windir");
+qDebug() << strWindows;
+qDebug() << QProcessEnvironment::systemEnvironment().value("ALLUSERSPROFILE");
+
+QStringList environmentList = QProcess::systemEnvironment();
+foreach (QString environment, environmentList )
+{
+    qDebug() << environment;
+}
